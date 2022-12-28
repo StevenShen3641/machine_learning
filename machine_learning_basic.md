@@ -106,7 +106,7 @@ error: $\hat{y}^{(i)} - y^{(i)}$
 
 $m$ = number of training examples
 
-function: $J(w, b) = \frac{1}{2m}\sum_{i = 1}^m(\hat{y}^{(i)} - y^{(i)})^2$ = $J(w, b) = \frac{1}{2m}\sum_{i = 1}^m(f(x^{(i)}) - y^{(i)})^2$
+function: $J(w, b) = \frac{1}{2m}\sum_{i = 1}^m(\hat{y}^{(i)} - y^{(i)})^2 = \frac{1}{2m}\sum_{i = 1}^m(f(x^{(i)}) - y^{(i)})^2$
 
 An $\frac{1}{2}$ before $1\over{m}$ is for easier calculation (differential) 
 
@@ -140,11 +140,21 @@ ${minimize}_{w, b}J(w, b)$
 
 ### 2.4 Visualizing the Cost Function
 
+Consider another model function: $f = wx + b$, for example, set $w = 0.06$ and $b = 50$.
+
+![](files/3.png)
+
+Let's see the cost function with two parameters: $w$ and $b$.
+
+![](files/2.png)
+
+Every point on the 3D model represent the value $J$ of a set of $w$ and $b$.
+
+Similarly, we can also use the contour plot (等高线图表) to represent $J$.
+
+![](files/4.png)
 
 
 
-
-
-
-
+The bottom of the bowl represent the minimum cost of all the models.
 
